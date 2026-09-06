@@ -1,8 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
-import { createObserveModule } from '@nestjs/observe';
-
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -10,8 +8,6 @@ import { UserModule } from './User/user.module';
 import { BoardModule } from './Board/board.module';
 import { ColumnModule } from './Column/column.module';
 import { TaskModule } from './Task/task.module';
-
-export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
 @Module({
   imports: [

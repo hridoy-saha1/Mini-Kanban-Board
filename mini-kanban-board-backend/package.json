@@ -1,13 +1,14 @@
 {
   "name": "mini-kanban-board-backend",
   "version": "0.0.1",
-  "engines": {
-  "node": "24.x"
-},
-  "description": "",
+  "description": "Mini Kanban Board Backend",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
+  
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "build": "nest build",
     "deploy": "nest deploy",
@@ -15,7 +16,7 @@
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main",
+    "start:prod": "node dist/main.js",
     "lint": "oxlint src/ test/",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -24,25 +25,24 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@nestjs/common": "^12.0.1",
-    "@nestjs/config": "^12.0.0",
-    "@nestjs/core": "^12.0.1",
-    "@nestjs/jwt": "^12.0.1",
-    "@nestjs/mapped-types": "^12.0.0",
-    "@nestjs/observe": "^0.1.8",
-    "@nestjs/passport": "^12.0.0",
-    "@nestjs/platform-express": "^12.0.1",
-    "@nestjs/typeorm": "^12.0.1",
-    "bcrypt": "^6.0.0",
-    "class-transformer": "^0.5.1",
-    "class-validator": "^0.15.1",
-    "passport": "^0.7.0",
-    "passport-jwt": "^4.0.1",
-    "pg": "^8.23.0",
-    "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.1",
-    "typeorm": "^1.1.1"
-  },
+  "@nestjs/common": "^12.0.1",
+  "@nestjs/config": "^12.0.0",
+  "@nestjs/core": "^12.0.1",
+  "@nestjs/jwt": "^12.0.1",
+  "@nestjs/mapped-types": "^12.0.0",
+  "@nestjs/passport": "^12.0.0",
+  "@nestjs/platform-express": "^12.0.1",
+  "@nestjs/typeorm": "^12.0.1",
+  "bcrypt": "^6.0.0",
+  "class-transformer": "^0.5.1",
+  "class-validator": "^0.15.1",
+  "passport": "^0.7.0",
+  "passport-jwt": "^4.0.1",
+  "pg": "^8.23.0",
+  "reflect-metadata": "^0.2.2",
+  "rxjs": "^7.8.1",
+  "typeorm": "^1.1.1"
+},
   "devDependencies": {
     "@nestjs/cli": "^12.0.0",
     "@nestjs/mau": "^0.2.6",
