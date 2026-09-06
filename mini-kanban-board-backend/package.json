@@ -1,6 +1,9 @@
 {
   "name": "mini-kanban-board-backend",
   "version": "0.0.1",
+  "engines": {
+  "node": "24.x"
+},
   "description": "",
   "author": "",
   "private": true,
