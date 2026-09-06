@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import type { DragEvent, FormEvent } from "react";
 
 const API_URL = (
-  process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3000"
+  process.env.NEXT_PUBLIC_API_URL ?? "https://mini-kanban-board-9bci.onrender.com"
 ).replace(/\/$/, "");
 
 type Board = {
